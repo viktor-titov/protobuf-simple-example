@@ -114,7 +114,7 @@ func promptForAddress(r io.Reader) (*pb.Person, error) {
 		// A proto enum results in a Go constant for each enum value.
 		switch ptype {
 		case "mobile":
-			pn.Type = pb.PhoneType_PHONE_TYPE_HOME
+			pn.Type = pb.PhoneType_PHONE_TYPE_MOBILE
 		case "home":
 			pn.Type = pb.PhoneType_PHONE_TYPE_HOME
 		case "work":
